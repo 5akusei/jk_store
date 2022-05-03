@@ -18,6 +18,21 @@
   }
 }
 
+.styles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.message-error {
+  background: red;
+  color: white;
+  opacity: 0;
+  transition: all linear .5s;
+  &.invalid {
+    opacity: 1;
+  }
+}
+
 //Tablets
 @media screen and (min-width: 768px) {
   .products--grid {
