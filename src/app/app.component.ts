@@ -9,17 +9,31 @@ import { Product } from './product.model';
 })
 export class AppComponent {
   widthImg = 10;
+
   name = 'Jeison';
+
   age = 18;
+
   img = 'https://www.w3schools.com/howto/img_avatar.png';
+
   btnDisabled = true;
+
   person = {
     name: 'Jeison',
     age: 18,
     avatar: 'https://www.w3schools.com/howto/img_avatar.png'
   }
+
   names: string[] = ['Jei', 'Juli', 'Santi'];
+
   newName = '';
+
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  };
+
   products: Product[] = [
     {
       name: 'EL mejor juguete',
