@@ -1,5 +1,6 @@
 <h1>Using components</h1>
-<app-img></app-img>
+<app-img [img]="img"></app-img>
+<p><input type="text" name="url_input" id="url_input" [(ngModel)]="img"></p>
 
 <h1>NgClass & NgStyle</h1>
 <input type="text" required #nameInput4="ngModel" [(ngModel)]="person.name" />
