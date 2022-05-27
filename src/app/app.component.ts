@@ -68,6 +68,10 @@ export class AppComponent {
     }
   ]
 
+  onLoaded(img: string) {
+    console.log('desde el padre', img);
+  }
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }

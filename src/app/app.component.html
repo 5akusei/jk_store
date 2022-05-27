@@ -1,5 +1,5 @@
 <h1>Using components</h1>
-<app-img [img]="img"></app-img>
+<app-img (loaded)="onLoaded($event)" [img]="img"></app-img>
 <p><input type="text" name="url_input" id="url_input" [(ngModel)]="img"></p>
 
 <h1>NgClass & NgStyle</h1>

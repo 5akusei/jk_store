@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-img',
@@ -7,11 +7,23 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ImgComponent implements OnInit {
   // uso del decorador Input para poder recibir informacion del padre hacia el hijo
-  @Input() img:string = 'valor inicial';
+  @Input() img:string = '';
+  @Output() loaded:EventEmitter<string> = new EventEmitter<string>();
+
+  imgDefault: string = './assets/images/default.png';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  imgError(): void {
+    this.img = this.imgDefault;
+  }
+
+  loadedImg(): void {
+    console.log('Desde el hijo');
+    this.loaded.emit(this.img);
   }
 
 }
