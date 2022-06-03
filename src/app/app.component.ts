@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Product } from './models/product.model';
-
-import { Product1 } from './product.model';
+import { Product } from './product.model';
 
 
 @Component({
@@ -21,27 +19,6 @@ export class AppComponent {
 
   btnDisabled = true;
 
-  products : Product[] = [
-    {
-      id: '1',
-      name: 'Random Product 1',
-      image: 'https://picsum.photos/200',
-      price: 60
-    },
-    {
-      id: '2',
-      name: 'Random Product 2',
-      image: 'https://picsum.photos/200',
-      price: 290
-    },
-    {
-      id: '3',
-      name: 'Random Product 3',
-      image: 'https://picsum.photos/200',
-      price: 100
-    }
-  ]
-
   person = {
     name: 'Jeison',
     age: 18,
@@ -58,7 +35,7 @@ export class AppComponent {
     background: 'red'
   };
 
-  products1: Product1[] = [
+  products: Product[] = [
     {
       name: 'EL mejor juguete',
       price: 565,
