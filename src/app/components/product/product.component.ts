@@ -8,16 +8,16 @@ import { Product } from '../../models/product.model';
 })
 export class ProductComponent implements OnInit {
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   @Input() product: Product = {
     id: '1',
     name: 'Random Product',
     image: 'https://picsum.photos/200',
     price: 100
-  }
-
-  constructor() { }
-
-  ngOnInit(): void {
   }
 
 }

@@ -6,16 +6,17 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./img.component.scss']
 })
 export class ImgComponent implements OnInit {
-  // uso del decorador Input para poder recibir informacion del padre hacia el hijo
-  @Input() img:string = '';
-  @Output() loaded:EventEmitter<string> = new EventEmitter<string>();
-
-  imgDefault: string = './assets/images/default.png';
 
   constructor() { }
 
   ngOnInit(): void {
   }
+  
+  // uso del decorador Input para poder recibir informacion del padre hacia el hijo
+  @Input() img:string = '';
+  @Output() loaded:EventEmitter<string> = new EventEmitter<string>();
+
+  imgDefault: string = './assets/images/default.png';
 
   imgError(): void {
     this.img = this.imgDefault;

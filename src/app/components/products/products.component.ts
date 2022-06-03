@@ -11,6 +11,9 @@ export class ProductsComponent implements OnInit {
 
   constructor() { }
 
+  ngOnInit(): void {
+  }
+
   products : Product[] = [
     {
       id: '1',
@@ -31,8 +34,5 @@ export class ProductsComponent implements OnInit {
       price: 100
     }
   ]
-
-  ngOnInit(): void {
-  }
 
 }
