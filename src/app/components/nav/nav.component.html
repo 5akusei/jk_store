@@ -1,6 +1,6 @@
 <div class="show-mobile">
     <div>
-        <button>
+        <button (click)="toggleStateMenu()" >
             <img src="../../../assets/svg/icon_menu.svg" alt="menu">
         </button>
         <a href="">
@@ -10,6 +10,14 @@
             <img src="../../../assets/svg/icon_shopping_cart.svg" alt="logo">
         </a>
     </div>
+</div>
+<div class="side-bar"  [class.active]="isMenuActive">
+    <button class="btn-close" (click)="toggleStateMenu()" >Close</button>
+    <ul>
+        <li><a href="">All</a></li>
+        <li><a href="">Clothes</a></li>
+        <li><a href="">Electronics</a></li>
+    </ul>
 </div>
 <div class="hide-mobile">
     <div>

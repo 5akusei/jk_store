@@ -12,4 +12,10 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isMenuActive: boolean = false;
+
+  toggleStateMenu(): void {
+    this.isMenuActive = !this.isMenuActive;
+  }
+
 }
