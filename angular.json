@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "jk_store"
+  "defaultProject": "jk_store",
+  "cli": {
+    "analytics": "62f4819e-ab9b-455a-a3d7-68fe2d54e7de"
+  }
 }

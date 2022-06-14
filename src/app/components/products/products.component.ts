@@ -35,4 +35,11 @@ export class ProductsComponent implements OnInit {
     }
   ]
 
+  myShoppingCart: Product[] = [];
+  total: Number = 0;
+
+  onAddedToShoppingCart(product: Product): void {
+    this.myShoppingCart.push(product);
+    this.total = this.myShoppingCart.reduce((sum, item) => sum + item.price, 0);
+  }
 }
