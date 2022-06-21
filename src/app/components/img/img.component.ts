@@ -5,12 +5,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   templateUrl: './img.component.html',
   styleUrls: ['./img.component.scss']
 })
-export class ImgComponent implements OnInit {
+export class ImgComponent{
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
   
   // uso del decorador Input para poder recibir informacion del padre hacia el hijo
   @Input() img:string = '';

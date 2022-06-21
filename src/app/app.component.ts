@@ -10,9 +10,6 @@ export class AppComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
   title: string = 'j_k_store';
   
 }

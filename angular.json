@@ -103,12 +103,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "defaultProject": "jk_store",
   "cli": {
-    "analytics": "62f4819e-ab9b-455a-a3d7-68fe2d54e7de"
+    "analytics": "62f4819e-ab9b-455a-a3d7-68fe2d54e7de",
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
