@@ -1,4 +1,4 @@
 <app-img [img]="product.image" ></app-img>
 <h2>{{ product.price | currency:'CRC':true:'1.1-2'}}</h2> <!-- usando pipes -->
-<h3>{{product.title}}</h3>
+<h3 appHighlight>{{product.title}}</h3>
 <button class="btn" (click)="onAddToCart()">Add cart</button>
